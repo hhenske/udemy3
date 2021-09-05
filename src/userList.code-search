@@ -1,0 +1,31 @@
+# Query: userList
+# ContextLines: 1
+
+12 results - 2 files
+
+src\App.js:
+   2  import AddUser from './components/Users/AddUser.js';
+   3: import UsersList from './components/Users/s';
+   4  
+   5  function App() {
+   6:   const [s, sets] = useState([]);
+   7  
+   8    const addUserHandler = (uName, uAge)=> {
+   9:     sets((prevs) => {
+  10        return [
+  11:         ...prevs, 
+  12          {name: uName, age: uAge, id: Math.random().toString()},
+
+  19        <AddUser onAddUser={addUserHandler}/>
+  20:       <s users={s}/>
+  21      </div>
+
+src\components\Users\s.js:
+   3  import Card from '../UI/Card';
+   4: import classes from './s.module.css';
+   5  
+   6: const s = (props) => {
+   7    return (
+
+  19  
+  20: export default s;
